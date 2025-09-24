@@ -1,0 +1,60 @@
+.culto-card {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  border: 1px solid #e9ecef;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.card-header h3 {
+  margin: 0;
+  font-size: 1.25rem;
+  color: #333;
+}
+
+.tag {
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: white;
+}
+
+/* Cores das tags - você pode adicionar mais */
+.tag-dominical { background-color: #007bff; }
+.tag-oracao { background-color: #28a745; }
+.tag-estudo { background-color: #ffc107; color: #333; }
+.tag-especial { background-color: #dc3545; }
+
+.card-subtitle {
+  color: #6c757d;
+  font-size: 0.95rem;
+  margin-bottom: 1.5rem;
+}
+
+.card-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.detail-item {
+  display: flex;
+  align-items: center;
+  color: #495057;
+  font-size: 0.9rem;
+}
+
+.detail-item i {
+  width: 20px;
+  text-align: center;
+  margin-right: 10px;
+  color: #868e96;
+}

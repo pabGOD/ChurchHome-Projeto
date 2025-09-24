@@ -1,0 +1,31 @@
+<div class="container">
+  <header class="page-header">
+    <div>
+      <h2>Agenda de Cultos</h2>
+      <p>Gerencie e visualize todos os cultos e eventos</p>
+    </div>
+    <button class="btn btn-primary-dark">
+      <i class="fas fa-plus"></i> Novo Culto
+    </button>
+  </header>
+
+  <div class="filter-bar">
+    <div class="search-input">
+      <i class="fas fa-search"></i>
+      <input type="text" placeholder="Buscar por título ou local...">
+    </div>
+    <div class="filter-select">
+      <select>
+        <option>Todos os tipos</option>
+        <option>Culto Dominical</option>
+        <option>Reunião de Oração</option>
+        <option>Estudo Bíblico</option>
+        <option>Evento Especial</option>
+      </select>
+    </div>
+  </div>
+
+  <main class="cultos-grid">
+    <app-culto-card *ngFor="let culto of cultos" [culto]="culto"></app-culto-card>
+  </main>
+</div>

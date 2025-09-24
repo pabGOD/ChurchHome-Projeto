@@ -1,0 +1,25 @@
+<div class="culto-card" *ngIf="culto">
+  <div class="card-header">
+    <h3>{{ culto.titulo }}</h3>
+    <span class="tag" [ngClass]="getTagClass(culto.tipo)">{{ culto.tipo }}</span>
+  </div>
+  <p class="card-subtitle">{{ culto.subtitulo }}</p>
+  <div class="card-details">
+    <div class="detail-item">
+      <i class="fas fa-calendar-alt"></i>
+      <span>{{ culto.data | date: 'dd \'de\' MMMM, yyyy' : '' : 'pt-BR' }}</span>
+    </div>
+    <div class="detail-item">
+      <i class="fas fa-clock"></i>
+      <span>{{ culto.data | date: 'HH:mm' }}</span>
+    </div>
+    <div class="detail-item">
+      <i class="fas fa-map-marker-alt"></i>
+      <span>{{ culto.local }}</span>
+    </div>
+    <div class="detail-item">
+      <i class="fas fa-users"></i>
+      <span>{{ culto.participantesConfirmados }} participantes confirmados</span>
+    </div>
+  </div>
+</div>
